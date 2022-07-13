@@ -1,0 +1,41 @@
+.TH _PRINTF 2 "6th July 2022" " ALX engineering Printf"
+.SH NAME
+B _printf
+- function to produce output according to a format entered.
+.SH SYNOPSIS
+.BR #include
+.BR <main.h>
+
+.BR int _printf(const char *format, ...);
+.SH DESCRIPTION
+Print the FORMAT in string, after interpreting the directives with '%'
+.IReturn:
+Print the numbers of characters excluding the Null-Byte
+        Print the ARGUMENT(s) according to FORMAT:
+.PP
+.B %c
+        Print the characters calling the function and returning in character ASCII
+.PP
+.B %s
+        Print an array of characters(string) excluding the null byte.
+.PP
+.B %d
+        The function will print an integer with and the sign in base 10.
+.PP
+.B %i
+        The function will print an integer with and the sign in base 10.
+.PP
+.B %b
+        The function will print an integer with and the sign in base 2.
+.SH EXAMPLES OF USE
+.B Characters
+.PP
+_printf("Character with _print:[%c][%c][%c][%c][%c]\n", 'D', 'A', 'V', 'I', 'D');
+.PP
+.I Output:
+DAVID
+.PP
+.B Strings
+.PP
+_printf("String:[%s]\n", "Hello, World!");
+.PP
